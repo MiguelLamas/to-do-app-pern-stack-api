@@ -1,7 +1,7 @@
 {
-  "name": "server",
+  "name": "to-do-app-pern-stack-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Todo App built with the PERN stack combining PERN technologies, so they can interact in order for it to function as full-stack web application.",
   "main": "index.js",
   "engines": {
     "node": "16.17.1",
@@ -11,12 +11,19 @@
     "start": "node server/index.js",
     "build": "npm install && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelLamas/to-do-app-pern-stack-api.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelLamas/to-do-app-pern-stack-api/issues"
+  },
+  "homepage": "https://github.com/MiguelLamas/to-do-app-pern-stack-api#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "pg": "^8.10.0"
+    "pg": "^8.11.0"
   }
 }
