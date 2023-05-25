@@ -12,7 +12,7 @@ const devConfig = {
 };
 
 const proConfig = {
-  connectionString: process.env.DATBASE_URL,
+  connectionString: process.env.PG_DATABASE,
 };
 
 const pool = new Pool(
