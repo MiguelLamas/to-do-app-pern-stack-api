@@ -16,11 +16,11 @@ app.use(express.json()); // giving us access to req.body so we can get JSON Data
 app.use(cors());
 
 
-// if (process.env.NODE_ENV === "production") {
-//   //server static content
-//   //npm run build
-//   app.use(express.static(path.join(__dirname, "client/build")))
-// };
+if (process.env.NODE_ENV === "production") {
+  //server static content
+  //npm run build
+  app.use(express.static(path.join(__dirname, "client/build")))
+};
 
 // ROUTES //
 
@@ -96,9 +96,9 @@ app.delete("/todos/:id", async (req, res) => {
   }
 });
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "client/build/index.html"));
-//   res.setHeader("Access-Control-Allow-Credentials", "true"); // ignores cors origin errors
-// });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build/index.html"));
+  res.setHeader("Access-Control-Allow-Credentials", "true"); // ignores cors origin errors
+});
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
