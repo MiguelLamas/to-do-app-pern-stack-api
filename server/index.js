@@ -41,7 +41,7 @@ app.post("/todos", async (req, res) => {
 });
 
 // GET ALL TODOS
-app.get("/todos", async (req, res) => {
+app.get("https://to-do-app-pern-stack-api.onrender.com/todos", async (req, res) => {
   try {
     const allTodos = await pool.query("SELECT * FROM todo");
     res.json(allTodos.rows);
@@ -52,7 +52,7 @@ app.get("/todos", async (req, res) => {
 });
 
 // GET A TODO
-app.get("/todos/:id", async (req, res) => {
+app.get("https://to-do-app-pern-stack-api.onrender.com/todos/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const todo = await pool.query("SELECT * FROM todo WHERE todo_id = $1", [
@@ -66,7 +66,7 @@ app.get("/todos/:id", async (req, res) => {
 });
 
 // UPDATE A TODO
-app.put("/todos/:id", async (req, res) => {
+app.put("https://to-do-app-pern-stack-api.onrender.com/todos/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const { description } = req.body;
@@ -83,7 +83,7 @@ app.put("/todos/:id", async (req, res) => {
 });
 
 // DELETE A TODO
-app.delete("/todos/:id", async (req, res) => {
+app.delete("https://to-do-app-pern-stack-api.onrender.com/todos/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const deleteTodo = await pool.query("DELETE FROM todo WHERE todo_id = $1", [
