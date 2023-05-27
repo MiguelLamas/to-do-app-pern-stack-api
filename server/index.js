@@ -24,6 +24,14 @@ app.use(cors());
 
 // ROUTES //
 
+// TEST ROUTE
+app.get("/", function (req, res) {
+  res.json({
+    success: true,
+    message: "Test route up and running!",
+  });
+});
+
 // CREATE A TODO
 app.post("/todos", async (req, res) => {
   try {
