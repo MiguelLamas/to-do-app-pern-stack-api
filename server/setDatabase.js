@@ -3,9 +3,6 @@ require("dotenv").config();
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
 });
 
   const makeDatabase = async () => await pool.query(
@@ -13,6 +10,7 @@ const pool = new Pool({
     );
 
 const DB = setDatabase;
+
 
 console.log(DB);
 
