@@ -3,15 +3,17 @@ require("dotenv").config();
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  ssl: process.env.DATABASE_SSL === `true`
+  ssl: {
+		rejectUnauthorized: false,
+	},
 });
 
-  const makeDatabase = async () => await pool.query(
+  const createTodoTable = async () => await pool.query(
       "CREATE TABLE todo (todo_id SERIAL PRIMARY KEY, description VARCHAR(255) NOT NULL)"
     );
 
 
-console.log(makeDatabase());
+console.log(createTodoTable());
 
 
 
