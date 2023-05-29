@@ -14,9 +14,9 @@ const pool = new Pool({
     );
 
 
-console.log(createTodoTable())
 
 
-module.exports = pool
+
+
 
 
