@@ -9,9 +9,8 @@ const pool = new Pool({
       "CREATE TABLE todo (todo_id SERIAL PRIMARY KEY, description VARCHAR(255) NOT NULL)"
     );
 
-const DB = setDatabase;
 
+console.log(makeDatabase());
 
-console.log(DB);
 
 
