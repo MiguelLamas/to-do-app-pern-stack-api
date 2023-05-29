@@ -5,6 +5,7 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: {
 		rejectUnauthorized: false,
+    ca: fs.readFileSync('/path/to/server-certificates/root.crt').toString(),
 	},
 });
 
@@ -13,8 +14,9 @@ const pool = new Pool({
     );
 
 
-console.log(createTodoTable());
+console.log(createTodoTable())
 
 
+module.exports = pool
 
 
