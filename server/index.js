@@ -44,6 +44,7 @@ app.post("/todos", async (req, res) => {
     res.json(newTodo.rows[0]);
   } catch (err) {
     console.error(err.message);
+    res.status(500).json({message: err.message}); 
   }
 });
 
@@ -54,6 +55,7 @@ app.get("/todos", async (req, res) => {
     res.json(allTodos.rows);
   } catch (err) {
     console.error(err.message);
+    res.status(500).json({message: err.message}) 
   }
 });
 
@@ -67,6 +69,7 @@ app.get("/todos/:id", async (req, res) => {
     res.json(todo.rows[0]);
   } catch (err) {
     console.error(err.message);
+    res.status(500).json({message: err.message});
   }
 });
 
@@ -83,6 +86,7 @@ app.put("/todos/:id", async (req, res) => {
     res.json("Todo was updated!");
   } catch (err) {
     console.error(err.message);
+    res.status(500).json({message: err.message});
   }
 });
 
@@ -96,6 +100,7 @@ app.delete("/todos/:id", async (req, res) => {
     res.json("Todo was deleted!"); 
   } catch (err) {
     console.error(err.message);
+    res.status(500).json({message: err.message});
   }
 });
 
