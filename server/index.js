@@ -42,7 +42,6 @@ app.post("/todos", async (req, res) => {
     );
 
     res.json(newTodo.rows[0]);
-    res.setHeader("Access-Control-Allow-Credentials", "true"); // ignores cors origin errors
   } catch (err) {
     console.error(err.message);
   }
@@ -53,7 +52,6 @@ app.get("/todos", async (req, res) => {
   try {
     const allTodos = await pool.query("SELECT * FROM todo");
     res.json(allTodos.rows);
-    res.setHeader("Access-Control-Allow-Credentials", "true"); // ignores cors origin errors
   } catch (err) {
     console.error(err.message);
   }
@@ -67,7 +65,6 @@ app.get("/todos/:id", async (req, res) => {
       id,
     ]);
     res.json(todo.rows[0]);
-    res.setHeader("Access-Control-Allow-Credentials", "true"); // ignores cors origin errors
   } catch (err) {
     console.error(err.message);
   }
@@ -84,7 +81,6 @@ app.put("/todos/:id", async (req, res) => {
     );
 
     res.json("Todo was updated!");
-    res.setHeader("Access-Control-Allow-Credentials", "true"); // ignores cors origin errors
   } catch (err) {
     console.error(err.message);
   }
@@ -97,8 +93,7 @@ app.delete("/todos/:id", async (req, res) => {
     const deleteTodo = await pool.query("DELETE FROM todo WHERE todo_id = $1", [
       id,
     ]);
-    res.json("Todo was deleted!");
-    res.setHeader("Access-Control-Allow-Credentials", "true"); // ignores cors origin errors
+    res.json("Todo was deleted!"); 
   } catch (err) {
     console.error(err.message);
   }
