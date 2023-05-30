@@ -2,11 +2,7 @@ const Pool = require("pg").Pool;
 require("dotenv").config();
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-		rejectUnauthorized: false,
-    ca: fs.readFileSync('/path/to/server-certificates/root.crt').toString(),
-	},
+  connectionString: process.env.DATABASE_URL
 });
 
   const createTodoTable = async () => await pool.query(
@@ -15,7 +11,7 @@ const pool = new Pool({
 
 
 
-
+console.log(createTodoTable())
 
 
 
