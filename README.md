@@ -39,7 +39,7 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
   * Install Node.js
   * Install [postgres](https://www.youtube.com/watch?v=fZQI7nBu32M&t=0s)
 
-* Clone Repo 
+* Clone Repo `https://github.com/MiguelLamas/to-do-app-pern-stack-api.git`
 
 * Before starting the project, follow these steps to create project and get your server up and running:
 
