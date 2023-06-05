@@ -21,7 +21,6 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
 
 ## Back End Built with:
 
-* SQL
 * Node.js
 * Express
 * PostgreSQL
