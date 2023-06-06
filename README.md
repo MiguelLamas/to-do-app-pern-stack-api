@@ -2,7 +2,7 @@
 
 A simple Todo App built with the PERN stack combining PERN technologies, so they can interact via CRUD functions in order to function as full-stack web application.
 
-**This README is for the Backend of the Todo PERN App. If you would like to explore the Frontend of the app please go to the [Frontend repository](https://github.com/MiguelLamas/to-do-app-pern-stack-frontend)**
+**This README is for the Backend of the Todo PERN App. If you would like to explore the Frontend of the app please go to the [Frontend repository](https://github.com/MiguelLamas/to-do-app-pern-stack-frontend).**
 
 ## Main Learning Points:
 
