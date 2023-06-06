@@ -36,11 +36,8 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
 * Prerequisites
   * Install Node.js
   * Install [postgres](https://www.youtube.com/watch?v=fZQI7nBu32M&t=0s)
-
-# **_Run Locally_**
-
-Clone Repo
-
+  
+* Clone Repo
 ```bash
   git clone https://github.com/MiguelLamas/to-do-app-pern-stack-api.git
 ```
@@ -54,8 +51,7 @@ Clone Repo
   * `touch index.js` - require the libraries in this file, app.listen to start server, app.use to create middlewear (express, cors)
   * `npm install -g nodemon`
   * `nodemon index` - will watch index.js file, every time there's a change it will instantly restart it
-  * `npx create-react-app client` - setting up client side with React
-  * `npm start` - to get client side started
+  
 
 * To make your dev experience easier, download these VS code extensions:
   * ES7 React/Redux/GraphQL/React-Native snippets
