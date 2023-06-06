@@ -2,11 +2,11 @@
 
 A simple Todo App built with the PERN stack combining PERN technologies, so they can interact via CRUD functions in order to function as full-stack web application.
 
-**This README is for the Back-end of the Todo PERN App. If you would like to explore the Front-end of the app please go to the [Front-end repository](https://github.com/MiguelLamas/to-do-app-pern-stack-frontend)**
+**This README is for the Backend of the Todo PERN App. If you would like to explore the Frontend of the app please go to the [Frontend repository](https://github.com/MiguelLamas/to-do-app-pern-stack-frontend)**
 
 ## Main Learning Points:
 
-* How the Front End interacts with the Server and Relational Database via REST API which is using Hypertext Transfer Protocol (HTTP Requests) to run CRUD operations in the database.
+* How the Frontend interacts with the Server and Relational Database via REST API which is using Hypertext Transfer Protocol (HTTP Requests) to run CRUD operations in the database.
 * Actual CRUD Operations only occur in our database (whether postgres, MongoDB, MySQL...)
 * Building a server (index.js) require libraries, adding the middleware app.use and app.listen to start server.
 * How to create a Postgres Database and Table (including defining our PostgreSQL Schema)
@@ -19,12 +19,20 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
 * Using Bootstrap v5 Library to add Tables, Buttons and Modals to the app.
 
 
-## Back End Built with:
+## Backend Built with:
 
 * Node.js
 * Express
 * PostgreSQL
 * CORS - Cross-Origin Resource Sharing
+
+## Frontend Built with:
+
+* React.js
+* JavaScript
+* HTML
+* CSS
+* Bootstrap 5
 
 
 ## Deployed with:
@@ -37,10 +45,7 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
   * Install Node.js
   * Install [postgres](https://www.youtube.com/watch?v=fZQI7nBu32M&t=0s)
   
-* Clone Repo
-```bash
-  git clone https://github.com/MiguelLamas/to-do-app-pern-stack-api.git
-```
+* Clone Repo `git clone https://github.com/MiguelLamas/to-do-app-pern-stack-api.git`
 
 * Before starting the project, follow these steps to create project and get your server up and running:
 
