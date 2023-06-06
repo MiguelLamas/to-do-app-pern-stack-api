@@ -56,6 +56,8 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
   * `touch index.js` - require the libraries in this file, app.listen to start server, app.use to create middlewear (express, cors)
   * `npm install -g nodemon`
   * `nodemon index` - will watch index.js file, every time there's a change it will instantly restart it
+  * `npx create-react-app client` - setting up client side with React
+  * `npm start` - to get client side started
   
 
 * To make your dev experience easier, download these VS code extensions:
